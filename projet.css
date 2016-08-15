@@ -57,3 +57,10 @@ font-size:14px;
 color:green;
 text-align:center;
 }
+
+ui-btn {
+text-align:center;
+font-size:20px;
+width:200px;
+font-family: 'Fauna One', serif;
+}
