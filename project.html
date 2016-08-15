@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,9 +27,7 @@ Sign in and Sign out -->
 <li class="login_logout"><a href="/login.php">Login</a></li>
 
 <script type="text/javascript">
-
     var GlobalFname="%%GLOBAL_CurrentCustomerFirstName%%";
-
    if (GlobalFname === undefined || GlobalFname === null || GlobalFname === "Guest") {  
        // do nothing
    }
@@ -38,7 +35,6 @@ Sign in and Sign out -->
        $(".login_logout a").prop("href", "/login.php?action=logout");
        $(".login_logout a").text("Logout");
    }
-
 </script>
 
 </head>
@@ -51,12 +47,19 @@ Sign in and Sign out -->
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>I Am Now A Mobile Developer!!</p>
+    <p>
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn">Emergency</a>
+            <a href="#" class="ui-btn">Safe Spaces</a>
+            <a href="#" class="ui-btn">Others Near You</a>
+          </div>
+    </p>
   </div>
 
   <div data-role="footer">
     <h1>Footer Text</h1>
   </div>
+  
 
 </div>
 </body>
