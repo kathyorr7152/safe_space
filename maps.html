@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4HrsWO_WjH8HChCQCmiZBcPhF6sKcCD"></script>
+<script type="text/javascript" src="javascripts/jquery.googlemap.js"></script>
     <style>
       #map {
         width: 100%;
@@ -10,19 +13,16 @@
     <script src="maps.js">
     </script>
   </head>
-  <body onload = "initMap()">
-    <div style="min-height: 657px;" class="ui-page ui-page-theme-a ui-page-active" tabindex="0" data-url="map-page" data-role="page" id="map-page">
-    <div class="ui-header ui-bar-a" role="banner" data-role="header" data-theme="a">
-    <h1 aria-level="1" role="heading" class="ui-title">Maps</h1>
-    </div>
-    <div role="main" class="ui-content" id="map-canvas">
-        <!-- map loads here... -->
-    </div>
-    </div>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4HrsWO_WjH8HChCQCmiZBcPhF6sKcCD4&callback=initMap">
-    </script>
+  <body>
+<div id="map" style="width: 300px; height: 300px;"></div>
+<script type="text/javascript">
+  $(function() {
+    $("#map").googleMap({
+      zoom: 10, // Initial zoom level (optional)
+      coords: [48.895651, 2.290569], // Map center (optional)
+      type: "ROADMAP" // Map type (optional)
+    });
+  })
+</script>
   </body>
 </html>
