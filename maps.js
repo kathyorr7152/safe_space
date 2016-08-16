@@ -32,7 +32,7 @@ $( document ).on( "pageinit", "#map-page", function() {
         });
     }
 });
-/*function initMap() {
+function initMap() {
     var myLatLng = {lat: 47.62915, lng:-122.29639} ;
 
     var map = new google.maps.Map(document.getElementById('map'), ({
@@ -78,4 +78,4 @@ marker.setMap (map);
           infowindow.open(map, marker);
         });
       }
-}*/
+}
