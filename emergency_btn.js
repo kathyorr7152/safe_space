@@ -1,3 +1,4 @@
+
     $(document).ready(function(){
     navigator.geolocation.getCurrentPosition(handle_geolocation_query);
      });
@@ -10,7 +11,6 @@
      }
     
     $(function() {
-
         var Geo={};
 
         if (navigator.geolocation) {
