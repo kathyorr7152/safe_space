@@ -45,3 +45,4 @@ marker.setMap (map);
           infowindow.open(map, marker);
         });
       }
+}
