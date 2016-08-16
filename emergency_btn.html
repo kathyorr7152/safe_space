@@ -9,6 +9,8 @@
         <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
         <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        
+        <script src="emergency_btn.html"></script>
 
     </head>
 <body>
@@ -21,14 +23,19 @@
 
     <div data-role="content">  
         <ul data-role="listview" data-inset="true">
-            <li><a href="./longlat-embed.html" data-ajax="false">LongLat</a></li>
+            <div data-role="collapsible">
+                <h1>LongLat</h1>
+                    <p>
+                        <div class="geo-coords">
+                            GeoLocation: <span id="Lat">lat: ...</span>°,
+                            <span id="Long">long: ...</span>°
+                        </div>
+                    </p>
+            </div>
         </ul>
     </div>
     
-    <div class="geo-coords">
-        GeoLocation: <span id="Lat">lat: ...</span>°,
-               <span id="Long">long: ...</span>°
-    </div>
+
 
     <a href="./jqueryMobile-embed.html"
        data-role="button"
