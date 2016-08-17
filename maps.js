@@ -79,7 +79,6 @@ function initialize() {
    // a new Info Window is created
    infoWindow = new google.maps.InfoWindow();
 
-<<<<<<< HEAD
    // Event that closes the InfoWindow with a click on the map
    google.maps.event.addListener(map, 'click', function() {
       infoWindow.close();
@@ -88,11 +87,6 @@ function initialize() {
    // Finally displayMarkers() function is called to begin the markers creation
    displayMarkers();
 }
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 
 // This function will iterate over markersData array
 // creating markers with createMarker function
@@ -153,4 +147,4 @@ function createMarker(latlng, name, address1, address2, postalCode){
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
->>>>>>> origin/master
+
