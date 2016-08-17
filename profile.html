@@ -3,6 +3,7 @@
 <head>
   <title>Girls Who Code Final Project </title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    
 
     <link rel="stylesheet" href="css/themes3/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="css/themes3/Atheme.css" />
@@ -23,7 +24,11 @@
 
 <div data-role="header">
 <h1> Account Settings</h1> 
-<a href="signinpage.html" class="ui-btn" data-rel="back">Back</a>
+<a href="newproject.html" 
+data-role="button" 
+data-inline="true"> 
+BACK 
+</a> 
 </div> 
 
 
@@ -131,18 +136,23 @@
         </p> 
         <p>
         </p> 
-        
-        <h3>Follow </h3>
-            <div data-role="collapsible">
-            <h5>Follow Button</h5>
 
-<button id="button" data-following="false">Follow</button>
-<button type= "button"><a href = "follow.html">Emergency</a></button> 
-             
-	</div>
+<h3>Follow</h3><div data-role="collapsible">
+<h5>Follow button</h5>
+<p>Follow People.</p>
+
+ <div data-role="navbar">
+    <ul>
+        <li><a href="#" class="ui-btn-active">Send Message</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Call</a></li>
+    </ul>
+</div><!-- /navbar -->
+       
+<!--<button id="button" data-following="false">Follow</button>
+<button type= "button"><a href = "follow.html">Emergency</a></button> --!> 
+    </div>            
 </div>
 </html>
-
-
 
 
