@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Girls Who Code Final Project </title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <link rel="stylesheet" href="css/themes3/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/themes3/Atheme.css" />
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">-->
+<!-- Include jQuery Mobile stylesheets -->
+
+
+    
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<link rel="stylesheet" href="css/dncalendar-skin.min.css">
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script src="js/dncalendar.min.js"></script>
+
+<div id="dncalendar-container">
+
+</div>
+
+
+
+
+
+var my_calendar = $("#dncalendar-container").dnCalendar({
+    dataTitles: { defaultDate: 'default', today : 'Today' },
+    notes: [
+      { "<a href="http://www.jqueryscript.net/time-clock/">date</a>": "2015-12-25", "note": ["Merry Christmas 2015"] },
+      { "date": "2015-12-31", "note": ["Happy New Year 2016"] }
+      ],
+
+    showNotes: true,
+});
+        my_calendar.build();monthNames: [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
+        monthNamesShort: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Dec' ],
+        dayNames: [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        dayNamesShort: [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
+        dayUseShortName: false,
+        monthUseShortName: false,
+        showNotes: fals,
+        startWeek: 'sunday'<br type="_moz">
+        
+        
+        var my_calendar = $("#dncalendar-container").dnCalendar({
+    dataTitles: { defaultDate: 'default', today : 'Today' },
+    notes: [
+      { "date": "2015-12-25", "note": ["Merry Christmas 2015"] },
+      { "date": "2015-12-31", "note": ["Happy New Year 2016"] }
+      ],
+    showNotes: true,
+    dayClick: function(date, view) {
+      // do something...
+    }
+});
+       
+       
+       my_calendar.update({
+  minDate: "2015-12-05",
+  defaultDate: "2015-12-04"
+});
+
+</body> 
+</html>
+
+
+
+
+
+
+
