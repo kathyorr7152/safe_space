@@ -42,9 +42,26 @@ var markersData = [
    } // don’t insert comma in last item
 ];
 
+function initialize() {
+   var mapOptions = {
+      center: new google.maps.LatLng(47.608013, -122.335167),
+      zoom: 9,
+      mapTypeId: 'roadmap',
+   };
 
+   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+   // a new Info Window is created
+   infoWindow = new google.maps.InfoWindow();
 
+   // Event that closes the InfoWindow with a click on the map
+   google.maps.event.addListener(map, 'click', function() {
+      infoWindow.close();
+   });
+
+   // Finally displayMarkers() function is called to begin the markers creation
+   displayMarkers();
+}
 
 // This function will iterate over markersData array
 // creating markers with createMarker function
@@ -102,27 +119,6 @@ function createMarker(latlng, name, address1, address2, postalCode){
    });
 }
 
-
-function initialize() {
-   var mapOptions = {
-      center: new google.maps.LatLng(47.608013, -122.335167),
-      zoom: 9,
-      mapTypeId: 'roadmap',
-   };
-
-   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-   // a new Info Window is created
-   infoWindow = new google.maps.InfoWindow();
-
-   // Event that closes the InfoWindow with a click on the map
-   google.maps.event.addListener(map, 'click', function() {
-      infoWindow.close();
-   });
-
-   // Finally displayMarkers() function is called to begin the markers creation
-   displayMarkers();
-}
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
