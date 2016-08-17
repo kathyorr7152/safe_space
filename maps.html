@@ -10,7 +10,7 @@
                 top : 40px !important;  
                 right : 0; 
                 bottom : 40px !important;  
-                left : 0 !important;        
+                left : 0 !important;       
             }
         </style>  
         <script src="maps.js"></script>
@@ -36,9 +36,10 @@
             })
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvYMNm0GghHlg1kQa9Uaygqpc9-w5FgVk&callback=initMap"
-    async defer></script>
+        async defer></script>
+        <link rel="stylesheet" type="text/css" href="maps.css">
         </head>
-        <body>
+        <body onload=displayMarkers()>
         <div id="map" style="width: 550px; height: 450px;"></div>
         <div data-role="page" id="index">
         <div data-theme="a" data-role="header">
