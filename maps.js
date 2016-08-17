@@ -37,10 +37,40 @@ if ("geolocation" in navigator){ //check geolocation available
     console.log("Browser doesn't support geolocation!");
 }
 
-The Lobby Bar	1505 10th Avenue, Seattle, WA , 98122, United States	47.614336	-122.319785
 
-//marker code!!
+
+// This function will iterate over markersData array
+// creating markers with createMarker function
+function displayMarkers(){
+
+   // this variable sets the map bounds and zoom level according to markers position
+   var bounds = new google.maps.LatLngBounds();
+
+   // For loop that runs through the info on markersData making it possible to createMarker function to create the markers
+   for (var i = 0; i < markersData.length; i++){
+
+      var latlng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
+      var name = markersData[i].name;
+      var address1 = markersData[i].address1;
+      var address2 = markersData[i].address2;
+      var postalCode = markersData[i].postalCode;
+
+      createMarker(latlng, name, address1, address2, postalCode);
+
+      // Marker’s Lat. and Lng. values are added to bounds variable
+      bounds.extend(latlng); 
+   }
+
+   // Finally the bounds variable is used to set the map bounds
+   // with API’s fitBounds() function
+   map.fitBounds(bounds);
+}
+
+
+
+//marker data!!
 var markersData = [
+//The Lobby Bar	1505 10th Avenue, Seattle, WA , 98122, United States	47.614336	-122.319785
   {
       lat: 47.614336,
       lng: -122.319785,
@@ -49,20 +79,26 @@ var markersData = [
       address2: "Seattle, WA",
       postalCode: "98122, United States" // don’t insert comma in the last item of each marker
    },
+//Gay City Health Project	517 East Pike Street, Seattle, WA, 98122, United States	47.613912	-122.324633
    {
-      lat: 40.59955,
-      lng: -8.7498167,
-      name: "Camping Costa Nova",
-      address1:"Quinta dos Patos, n.º 2",
-      address2: "Praia da Costa Nova",
-      postalCode: "3830-453 Gafanha da Encarnação" // don’t insert comma in the last item of each marker
+      lat: 47.613912,
+      lng: -122.324633,
+      name: "Gay City Health Project",
+      address1:"517 East Pike Street",
+      address2: "Seattle, WA",
+      postalCode: "98122, United States" // don’t insert comma in the last item of each marker
    },
+//The James W. Ray Orion Center	1828 Yale Avenue, Seattle, WA 98101	47.618218	-122.330468
    {
-      lat: 40.6247167,
-      lng: -8.7129167,
-      name: "Camping Gafanha da Nazaré",
-      address1:"Rua dos Balneários do Complexo Desportivo",
-      address2: "Gafanha da Nazaré",
-      postalCode: "3830-225 Gafanha da Nazaré" // don’t insert comma in the last item of each marker
+      lat: 47.618218,
+      lng: -122.330468,
+      name: "The James W. Ray Orion Center",
+      address1:"1828 Yale Avenue",
+      address2: "Seattle, WA",
+      postalCode: "98101, United States" // don’t insert comma in the last item of each marker
    } // don’t insert comma in last item
 ];
+
+
+
+
