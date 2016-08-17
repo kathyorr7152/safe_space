@@ -1,4 +1,3 @@
-
 if ("geolocation" in navigator){ //check geolocation available
     //try to get user current location using getCurrentPosition() method
     navigator.geolocation.getCurrentPosition(function(position){
@@ -7,6 +6,32 @@ if ("geolocation" in navigator){ //check geolocation available
 }
 else{
     console.log("Browser doesn't support geolocation!");
+}
+// This function will iterate over markersData array
+// creating markers with createMarker function
+function displayMarkers(){
+
+   // this variable sets the map bounds and zoom level according to markers position
+   var bounds = new google.maps.LatLngBounds();
+
+   // For loop that runs through the info on markersData making it possible to createMarker function to create the markers
+   for (var i = 0; i < markersData.length; i++){
+
+      var latlng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
+      var name = markersData[i].name;
+      var address1 = markersData[i].address1;
+      var address2 = markersData[i].address2;
+      var postalCode = markersData[i].postalCode;
+
+      createMarker(latlng, name, address1, address2, postalCode);
+
+      // Marker’s Lat. and Lng. values are added to bounds variable
+      bounds.extend(latlng); 
+   }
+
+   // Finally the bounds variable is used to set the map bounds
+   // with API’s fitBounds() function
+   map.fitBounds(bounds);
 }
 
 
@@ -54,6 +79,7 @@ function initialize() {
    // a new Info Window is created
    infoWindow = new google.maps.InfoWindow();
 
+<<<<<<< HEAD
    // Event that closes the InfoWindow with a click on the map
    google.maps.event.addListener(map, 'click', function() {
       infoWindow.close();
@@ -62,6 +88,11 @@ function initialize() {
    // Finally displayMarkers() function is called to begin the markers creation
    displayMarkers();
 }
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 
 // This function will iterate over markersData array
 // creating markers with createMarker function
@@ -122,3 +153,4 @@ function createMarker(latlng, name, address1, address2, postalCode){
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
+>>>>>>> origin/master
