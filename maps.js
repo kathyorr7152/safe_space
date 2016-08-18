@@ -10,10 +10,6 @@
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
       {
-         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 47.614336, lng: -122.319785},
-          zoom: 6
-        });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         // Try HTML5 geolocation.
