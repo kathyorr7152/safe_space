@@ -37,24 +37,31 @@
             type: 'info'
           }, {
           //STARBUCKS
+          //1
             position: new google.maps.LatLng(47.614028, -122.337109),
             type: 'info'
           }, {
+          //2
             position: new google.maps.LatLng(47.61018,-122.342392),
             type: 'info'
           }, {
+           //3
             position: new google.maps.LatLng(47.662128, -122.296273),
             type: 'info'
           }, {
+          //4
             position: new google.maps.LatLng(47.608363,-122.338488),
             type: 'info'
           }, {
+          //5
             position: new google.maps.LatLng(47.620481,-122.313144),
             type: 'info'
           }, {
+          //6
             position: new google.maps.LatLng(47.618231,-122.303942),
             type: 'info'
           }, {
+          //7
             position: new google.maps.LatLng(47.630489,-122.32231),
             type: 'info'
           }, {
