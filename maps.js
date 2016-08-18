@@ -22,23 +22,17 @@ $( document ).on( "pageinit", "#map-page", function() {
         var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
         // Add an overlay to the map of current lat/lng
         var marker = new google.maps.Marker({
-            position: latlng,
+            position: latlng (47.608013, -122.335167)
             map: map,
             title: "Greetings!"
         });
     }
 });
-function initMap() {
-  var myLatLng = {lat: -25.363, lng: 131.044};
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: myLatLng
-  });
-
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!'
-  });
+if ("geolocation" in navigator){ //check geolocation available
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){
+            console.log("Found your location \nLat : "+position.coords.latitude+" \nLang :"+ position.coords.longitude);
+        });
+}else{
+    console.log("Browser doesn't support geolocation!");
 }
