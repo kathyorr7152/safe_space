@@ -4,21 +4,7 @@
           zoom: 12,
           center: new google.maps.LatLng(47.614336,-122.319785),
           mapTypeId: 'roadmap',
-          if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
         });
-<<<<<<< HEAD
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
@@ -29,15 +15,15 @@
           zoom: 6
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
-=======
-        
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
->>>>>>> 2c1ee56c4e52073147eeda70a5de6347b3c7a684
 
         // Try HTML5 geolocation.
+        
+
+          center: new google.maps.LatLng(47.614336,-122.319785),
+          mapTypeId: 'roadmap',
+        });
+        
+        
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -55,7 +41,6 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
-<<<<<<< HEAD
       }
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
@@ -75,8 +60,6 @@
             icon: iconBase + 'info-i_maps.png'
           }
         };
-=======
->>>>>>> 2c1ee56c4e52073147eeda70a5de6347b3c7a684
 
         function addMarker(feature) {
           var marker = new google.maps.Marker({
