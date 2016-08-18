@@ -28,11 +28,14 @@ $( document ).on( "pageinit", "#map-page", function() {
         });
     }
 });
-if ("geolocation" in navigator){ //check geolocation available
-    //try to get user current location using getCurrentPosition() method
-    navigator.geolocation.getCurrentPosition(function(position){
-            console.log("Found your location \nLat : "+position.coords.latitude+" \nLang :"+ position.coords.longitude);
-        });
-}else{
-    console.log("Browser doesn't support geolocation!");
-}
+jQuery(document).ready(function ($) {
+    alert("Your location is: " + geoplugin_countryName() + ", " + geoplugin_region() + ", " + geoplugin_city());
+
+    var country = geoplugin_countryName();
+    $("#country").append("<option value='1' selected>" + country + "</option>");
+
+    var zone = geoplugin_region();
+    $("#zone").append("<option value='1' selected>" + zone + "</option>");
+
+    var district = geoplugin_city();
+    $("#district").append("<option value='1' selected>" + district + "</opti
