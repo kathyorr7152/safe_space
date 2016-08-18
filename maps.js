@@ -70,9 +70,7 @@ var markersData = [
 
 
 
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
+
 
 // This function will iterate over markersData array
 // creating markers with createMarker function
@@ -154,4 +152,4 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
->>>>>>> origin/master
+
