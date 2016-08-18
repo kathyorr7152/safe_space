@@ -1,14 +1,7 @@
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
+
           center: new google.maps.LatLng(47.614336,-122.319785),
           mapTypeId: 'roadmap',
         });
-      // Note: This example requires that you consent to location sharing when
-      // prompted by your browser. If you see the error "The Geolocation service
-      // failed.", it means you probably did not give permission for the browser to
-      // locate you.
       {
          var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 47.614336, lng: -122.319785},
@@ -17,13 +10,6 @@
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         // Try HTML5 geolocation.
-        
-
-          center: new google.maps.LatLng(47.614336,-122.319785),
-          mapTypeId: 'roadmap',
-        });
-        
-        
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -51,17 +37,10 @@
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         var icons = {
           parking: {
-            icon: iconBase + 'parking_lot_maps.png'
-          },
-          library: {
-            icon: iconBase + 'library_maps.png'
-          },
-          info: {
-            icon: iconBase + 'info-i_maps.png'
-          }
-        };
-
-        function addMarker(feature) {
+        for (var i = 0, feature; feature = features[i]; i++) {
+          addMarker(feature);
+          
+          function addMarker(feature) {
           var marker = new google.maps.Marker({
             position: feature.position,
             icon: icons[feature.type].icon,
@@ -192,3 +171,11 @@
       
       
      
+        }
+      }
+\ No newline at end of file
+      }
+      
+      
+     
+\ No newline at end of file
