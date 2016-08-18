@@ -70,7 +70,7 @@
             icon: iconBase + 'library_maps.png'
           },
           info: {
-            icon: iconBase + 'info-i_maps.png'
+            icon:'star.png'
           }
         };
 
@@ -88,11 +88,11 @@
           {
           //The Lobby Bar
             position: new google.maps.LatLng(47.614336, -122.319785),
-            type: 'info'
+            type: 'library'
           }, {
           //Gay City Health Project
             position: new google.maps.LatLng( 47.613912,-122.324633),
-            type: 'info'
+            type: 'parking'
           }, {
           //STARBUCKS
           //1
