@@ -1,79 +1,50 @@
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: new google.maps.LatLng(47.614336,-122.319785),
+          mapTypeId: 'roadmap',
+        });
 
-//marker data!!
-var markersData = [
-//The Lobby Bar	1505 10th Avenue, Seattle, WA , 98122, United States	47.614336	-122.319785
-  {
-      lat: 47.614336,
-      lng: -122.319785,
-      name: "The Lobby Bar",
-      address1:"1505 10th Avenue",
-      address2: "Seattle, WA",
-      postalCode: "98122, United States" // don’t insert comma in the last item of each marker
-   },
-//Gay City Health Project	517 East Pike Street, Seattle, WA, 98122, United States	47.613912	-122.324633
-   {
-      lat: 47.613912,
-      lng: -122.324633,
-      name: "Gay City Health Project",
-      address1:"517 East Pike Street",
-      address2: "Seattle, WA",
-      postalCode: "98122, United States" // don’t insert comma in the last item of each marker
-   },
-//The James W. Ray Orion Center	1828 Yale Avenue, Seattle, WA 98101	47.618218	-122.330468
-   {
-      lat: 47.618218,
-      lng: -122.330468,
-      name: "The James W. Ray Orion Center",
-      address1:"1828 Yale Avenue",
-      address2: "Seattle, WA",
-      postalCode: "98101, United States" // don’t insert comma in the last item of each marker
-   } // don’t insert comma in last item
-];
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
 
-function initialize() {
-   var mapOptions = {
-      center: new google.maps.LatLng(47.608013, -122.335167),
-      zoom: 9,
-      mapTypeId: 'roadmap',
-   };
-
-   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-   // a new Info Window is created
-   infoWindow = new google.maps.InfoWindow();
-
-   // Event that closes the InfoWindow with a click on the map
-   google.maps.event.addListener(map, 'click', function() {
-      infoWindow.close();
-   });
-
-   // Finally displayMarkers() function is called to begin the markers creation
-   displayMarkers();
-}
-
-// This function will iterate over markersData array
-// creating markers with createMarker function
-function displayMarkers(){
-
-   // this variable sets the map bounds and zoom level according to markers position
-   var bounds = new google.maps.LatLngBounds();
-
-   // For loop that runs through the info on markersData making it possible to createMarker function to create the markers
-   for (var i = 0; i < markersData.length; i++){
-
-      var latlng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
-      var name = markersData[i].name;
-      var address1 = markersData[i].address1;
-      var address2 = markersData[i].address2;
-      var postalCode = markersData[i].postalCode;
-
-      createMarker(latlng, name, address1, address2, postalCode);
-
-      // Marker’s Lat. and Lng. values are added to bounds variable
-      bounds.extend(latlng); 
-   }
-
-   // Finally the bounds variable is used to set the map bounds
-   // with API’s fitBounds() function
-   map.fitBounds(bounds);
-}
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        }
+         var features = [
+          {
+          //The Lobby Bar
+            position: new google.maps.LatLng(47.614336, -122.319785),
+            type: 'info'
+          }, {
+          //Gay City Health Project
+            position: new google.maps.LatLng( 47.613912,-122.324633),
+            type: 'info'
+          }, {
+          //STARBUCKS
+            position: new google.maps.LatLng(47.614028, -122.337109),
+            type: 'info'
+          }, {
+            position: new google.maps.LatLng(47.61018,-122.342392),
+            type: 'info'
+          }
+        ];
+        for (var i = 0, feature; feature = features[i]; i++) {
+          addMarker(feature);
+        }
+      }
