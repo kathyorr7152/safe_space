@@ -104,7 +104,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.630489,-122.32231),
       type: 'info'
     }, {
-      //8
+    //8
       position: new google.maps.LatLng(47.607634,-122.310118),
        type: 'info'
     }, {
@@ -180,7 +180,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.641021,-122.325562),
       type: 'info'
     }, {
-    }
        //27
       position: new google.maps.LatLng(47.618231,-122.303942),
       type: 'info'
@@ -351,7 +350,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
      //6
       position: new google.maps.LatLng(47.657141,-122.312437),
       type: 'info'
-    }
+    },
   ];
 
 var infoWindows = [
@@ -464,26 +463,6 @@ var infoWindows = [
       //26
       position: new google.maps.LatLng(47.641021,-122.325562),
       type: 'info'
-    }, {    
-      //31
-      position: new google.maps.LatLng(47.724404,-122.344987),
-      type: 'info'
-    }, {    
-      //32
-      position: new google.maps.LatLng(47.733646,-122.313151),
-      type: 'info'
-    }, {    
-      //33
-      position: new google.maps.LatLng(47.733031,-122.311),
-      type: 'info'
-    }, {  
-      //34
-      position: new google.maps.LatLng(47.659235,-122.313473),
-      type: 'info'
-    }, {    
-      //35
-      position: new google.maps.LatLng(47.740932,-122.34354),
-      type: 'info'
     }
   ];
 
@@ -493,5 +472,5 @@ var infoWindows = [
           content: infoWindows[i].contentString
         });
     addMarker(feature, infowindow);
-  }
-}
+}}
+
