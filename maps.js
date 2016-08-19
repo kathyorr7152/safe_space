@@ -47,7 +47,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       icon: iconBase + 'parking_lot_maps.png'
     },
     library: {
-      icon: iconBase + 'library_maps.png'
+      icon: iconBase + 'star.png'
     },
     info: {
       icon:'star.png'
@@ -219,137 +219,137 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       //resteraunt
       //1
       position: new google.maps.LatLng(47.620836,-122.327898),
-      type: 'info'
+      type: 'library'
     }, {   
       //2
       position: new google.maps.LatLng(47.607052,-122.320759),
-      type: 'info'
+      type: 'library'
     }, {   
       //3
       position: new google.maps.LatLng(47.552913,-122.320859),
-      type: 'info'
+      type: 'library'
     }, {   
       //4
       position: new google.maps.LatLng(47.614426,-122.319061),
-      type: 'info'
+      type: 'library'
     }, {    
       //5
       position: new google.maps.LatLng(47.55721,-122.284452),
-      type: 'info'
+      type: 'library'
     }, {    
       //6
       position: new google.maps.LatLng(47.558001,-122.284853),
-      type: 'info'
+      type: 'library'
     }, {   
-      //7
+      //7 44
       position: new google.maps.LatLng(37.431573,-78.656894),
-      type: 'info'
+      type: 'library'
     }, {    
       //8
       position: new google.maps.LatLng(47.608986,-122.338634),
-      type: 'info'
+      type: 'library'
     }, {   
       //9
       position: new google.maps.LatLng(47.618231,-122.270996),
-      type: 'info'
+      type: 'library'
     }, {    
       //10
       position: new google.maps.LatLng(47.564301,-122.270996),
-      type: 'info'
+      type: 'library'
     }, {   
       //11
       position: new google.maps.LatLng(47.434294,-122.276282),
-      type: 'info'
+      type: 'library'
     }, {    
       //12
       position: new google.maps.LatLng(47.794523,-122.37327),
-      type: 'info'
+      type: 'library'
     }, {    
-      //13
+      //13 50
       position: new google.maps.LatLng(47.650062,-122.348423),
-      type: 'info'
+      type: 'library'
     }, {    
       //14
     position: new google.maps.LatLng(47.622929,-122.322318),
-      type: 'info'
+      type: 'library'
     }, {    
       //15
       position: new google.maps.LatLng(447.66118,-122.338931),
-      type: 'info'
+      type: 'library'
     }, {  
       //16
       position: new google.maps.LatLng(47.633814,-122.362665),
-      type: 'info'
+      type: 'library'
     }, {    
       //17
       position: new google.maps.LatLng(47.657141,-122.312437),
-      type: 'info'
+      type: 'library'
     }, {
       //18
       position: new google.maps.LatLng(47.665244,-122.317883),
-      type: 'info'
+      type: 'library'
     }, {
       //19
       position: new google.maps.LatLng(47.606991,-122.337844),
-      type: 'info'
+      type: 'library'
     }, {
       //20
       position: new google.maps.LatLng(47.64052,-122.302401),
-      type: 'info'
+      type: 'library'
     }, {
        //21
       position: new google.maps.LatLng(47.669828,-122.384315),
-      type: 'info'
+      type: 'library'
     }, {
        //22
       position: new google.maps.LatLng(47.645323,-122.401436),
-      type: 'info'
+      type: 'library'
     }, {
-     //23
+     //23 60
       position: new google.maps.LatLng(47.687452,-122.354757),
-      type: 'info'
+      type: 'library'
     }, {
      //24
       position: new google.maps.LatLng(47.652159,-122.355242),
-      type: 'info'
+      type: 'library'
     }, {
      //target
      //1
       position: new google.maps.LatLng(47.6083631,-122.338488),
-      type: 'info'
+      type: 'parking'
     }, {
      //2
       position: new google.maps.LatLng(47.522257,-122.368754),
-      type: 'info'
+      type: 'parking'
     }, {
      //3
       position: new google.maps.LatLng(47.709146,-122.324804),
-      type: 'info'
+      type: 'parking'
     }, {
      //metro
      //1
       position: new google.maps.LatLng(47.386455,-122.243032),
-      type: 'info'
+      type: 'parking'
     }, {
      //2
       position: new google.maps.LatLng(47.747408,-122.331985),
-      type: 'info'
+      type: 'parking'
     }, {
      //3
       position: new google.maps.LatLng(47.601978,-122.328188),
-      type: 'info'
+      type: 'parking'
     }, {
      //4
       position: new google.maps.LatLng(47.598521,-122.329805),
-      type: 'info'
+      type: 'parking'
     }, {
      //5
       position: new google.maps.LatLng(47.648211,-122.304292),
-      type: 'info'
+      type: 'parking'
     }, {
-     //6
+     //6 70
       position: new google.maps.LatLng(47.657141,-122.312437),
-      type: 'info'
+      type: 'parking'
     },
   ];
 
@@ -359,111 +359,138 @@ var infoWindows = [
     }, {
       contentString:'<p>Gay City Health Project</p>'
     }, {
-    //STARBUCKS
-    //1
-      position: new google.maps.LatLng(47.614028, -122.337109),
-      type: 'info'
+      contentString:'<p>Starbucks</p>'
     }, {
-    //2
-      position: new google.maps.LatLng(47.61018,-122.342392),
-      type: 'info'
-    }, {
-     //3
-      position: new google.maps.LatLng(47.662128, -122.296273),
-      type: 'info'
-    }, {
-    //4
-      position: new google.maps.LatLng(47.608363,-122.338488),
-      type: 'info'
-    }, {
-    //5
-      position: new google.maps.LatLng(47.620481,-122.313144),
-      type: 'info'
-    }, {
-    //6
-      position: new google.maps.LatLng(47.618231,-122.303942),
-      type: 'info'
-    }, {
-    //7
-      position: new google.maps.LatLng(47.630489,-122.32231),
-      type: 'info'
-    }, {
-      //8
-      position: new google.maps.LatLng(47.607634,-122.310118),
-       type: 'info'
-    }, {
-      //9
-      position: new google.maps.LatLng(47.661828,-122.33624),
-      type: 'info'
-    }, {
-      //10
-      position: new google.maps.LatLng(47.691889,-122.359125),
-      type: 'info'
-    }, {
-      //11
-      position: new google.maps.LatLng(47.637722,-122.356146),
-      type: 'info'
-    }, {
-      //12
-      position: new google.maps.LatLng(47.68966,-122.376136),
-     type: 'info'
-    }, {
-      //13
-      position: new google.maps.LatLng(47.66825,-122.374273),
-     type: 'info'
+      contentString:'<p>Starbucks</p>'
     }, { 
-      //14
-      position: new google.maps.LatLng(47.617405,-122.344447),
-      type: 'info'
+      contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>' //10
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
     }, {
-      //15
-      position: new google.maps.LatLng(47.622525,-122.321375),
-      type: 'info'
+      contentString:'<p>Starbucks</p>' //20
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>' //30
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
+    }, { 
+    contentString:'<p>Starbucks</p>'
     }, {
-      //16
-      position: new google.maps.LatLng(47.623822,-122.355237),
-      type: 'info'
+    contentString:'<p>Starbucks</p>'
     }, {
-      //17
-      position: new google.maps.LatLng(47.579068,-122.299594),
-      type: 'info'
+    contentString:'<p>Starbucks</p>'
     }, {
-      //18
-      position: new google.maps.LatLng(47.579831,-122.38593),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //19
-      position: new google.maps.LatLng(47.718018,-122.311915),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //20
-      position: new google.maps.LatLng(47.559739,-122.385295),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //21
-      position: new google.maps.LatLng(47.677932,-122.354581),
-     type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //22
-      position: new google.maps.LatLng(47.649861,-122.35007),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //23
-      position: new google.maps.LatLng(47.679988,-122.325477),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //24
-      position: new google.maps.LatLng(47.6814,-122.290689),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //25
-      position: new google.maps.LatLng(47.662626,-122.299708),
-      type: 'info'
+        contentString:'<p>Starbucks</p>'
     }, {
-      //26
-      position: new google.maps.LatLng(47.641021,-122.325562),
-      type: 'info'
-    }
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    }, {
+        contentString:'<p>Starbucks</p>'
+    } 
   ];
 
   //As long as infowindows and features have matching indexes and they are exactly the same length this will work
