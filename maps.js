@@ -340,18 +340,18 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.601978,-122.328188),
       type: 'info'
     }, {
-     //52
+     //4
       position: new google.maps.LatLng(47.598521,-122.329805),
       type: 'info'
     }, {
-     //52
+     //5
       position: new google.maps.LatLng(47.648211,-122.304292),
       type: 'info'
     }, {
-     //52
+     //6
       position: new google.maps.LatLng(47.657141,-122.312437),
       type: 'info'
-    }, 
+    }
   ];
 
 var infoWindows = [
@@ -464,7 +464,26 @@ var infoWindows = [
       //26
       position: new google.maps.LatLng(47.641021,-122.325562),
       type: 'info'
-    }, {
+    }, {    
+      //31
+      position: new google.maps.LatLng(47.724404,-122.344987),
+      type: 'info'
+    }, {    
+      //32
+      position: new google.maps.LatLng(47.733646,-122.313151),
+      type: 'info'
+    }, {    
+      //33
+      position: new google.maps.LatLng(47.733031,-122.311),
+      type: 'info'
+    }, {  
+      //34
+      position: new google.maps.LatLng(47.659235,-122.313473),
+      type: 'info'
+    }, {    
+      //35
+      position: new google.maps.LatLng(47.740932,-122.34354),
+      type: 'info'
     }
   ];
 
