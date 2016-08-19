@@ -238,54 +238,120 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.55721,-122.284452),
       type: 'info'
     }, {    
-      //41
+      //6
       position: new google.maps.LatLng(47.558001,-122.284853),
       type: 'info'
     }, {   
-      //42
+      //7
       position: new google.maps.LatLng(37.431573,-78.656894),
       type: 'info'
     }, {    
-      //43
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //8
+      position: new google.maps.LatLng(47.608986,-122.338634),
       type: 'info'
     }, {   
-      //44
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //9
+      position: new google.maps.LatLng(47.618231,-122.270996),
       type: 'info'
     }, {    
-      //45
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //10
+      position: new google.maps.LatLng(47.564301,-122.270996),
       type: 'info'
     }, {   
-      //46
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //11
+      position: new google.maps.LatLng(47.434294,-122.276282),
       type: 'info'
     }, {    
-      //47
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //12
+      position: new google.maps.LatLng(47.794523,-122.37327),
       type: 'info'
     }, {    
-      //48
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //13
+      position: new google.maps.LatLng(47.650062,-122.348423),
       type: 'info'
     }, {    
-      //49
-    position: new google.maps.LatLng(47.618231,-122.303942),
+      //14
+    position: new google.maps.LatLng(47.622929,-122.322318),
       type: 'info'
     }, {    
-      //50
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //15
+      position: new google.maps.LatLng(447.66118,-122.338931),
       type: 'info'
     }, {  
-      //51
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //16
+      position: new google.maps.LatLng(47.633814,-122.362665),
       type: 'info'
     }, {    
-      //52
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      //17
+      position: new google.maps.LatLng(47.657141,-122.312437),
       type: 'info'
     }, {
+      //18
+      position: new google.maps.LatLng(47.665244,-122.317883),
+      type: 'info'
+    }, {
+      //19
+      position: new google.maps.LatLng(47.606991,-122.337844),
+      type: 'info'
+    }, {
+      //20
+      position: new google.maps.LatLng(47.64052,-122.302401),
+      type: 'info'
+    }, {
+       //21
+      position: new google.maps.LatLng(47.669828,-122.384315),
+      type: 'info'
+    }, {
+       //22
+      position: new google.maps.LatLng(47.645323,-122.401436),
+      type: 'info'
+    }, {
+     //23
+      position: new google.maps.LatLng(47.687452,-122.354757),
+      type: 'info'
+    }, {
+     //24
+      position: new google.maps.LatLng(47.652159,-122.355242),
+      type: 'info'
+    }, {
+     //target
+     //1
+      position: new google.maps.LatLng(47.6083631,-122.338488),
+      type: 'info'
+    }, {
+     //2
+      position: new google.maps.LatLng(47.522257,-122.368754),
+      type: 'info'
+    }, {
+     //3
+      position: new google.maps.LatLng(47.709146,-122.324804),
+      type: 'info'
+    }, {
+     //metro
+     //1
+      position: new google.maps.LatLng(47.386455,-122.243032),
+      type: 'info'
+    }, {
+     //2
+      position: new google.maps.LatLng(47.747408,-122.331985),
+      type: 'info'
+    }, {
+     //3
+      position: new google.maps.LatLng(47.601978,-122.328188),
+      type: 'info'
+    }, {
+     //52
+      position: new google.maps.LatLng(47.598521,-122.329805),
+      type: 'info'
+    }, {
+     //52
+      position: new google.maps.LatLng(47.648211,-122.304292),
+      type: 'info'
+    }, {
+     //52
+      position: new google.maps.LatLng(47.657141,-122.312437),
+      type: 'info'
+    }, 
   ];
 
 var infoWindows = [
@@ -410,5 +476,3 @@ var infoWindows = [
     addMarker(feature, infowindow);
   }
 }
-
-
