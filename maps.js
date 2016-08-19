@@ -160,7 +160,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.677932,-122.354581),
      type: 'info'
     }, {
-      //22
+      //22 
       position: new google.maps.LatLng(47.649861,-122.35007),
       type: 'info'
     }, {
@@ -181,6 +181,111 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       type: 'info'
     }, {
     }
+       //27
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {
+      //28
+      position: new google.maps.LatLng(47.708251,-122.332232),
+      type: 'info'
+    }, {
+      //29
+      position: new google.maps.LatLng(47.5842,-122.333899),
+      type: 'info'
+    }, {   
+      //30
+      position: new google.maps.LatLng(47.775665,-122.346469),
+      type: 'info'
+    }, {    
+      //31
+      position: new google.maps.LatLng(47.724404,-122.344987),
+      type: 'info'
+    }, {    
+      //32
+      position: new google.maps.LatLng(47.733646,-122.313151),
+      type: 'info'
+    }, {    
+      //33
+      position: new google.maps.LatLng(47.733031,-122.311),
+      type: 'info'
+    }, {  
+      //34
+      position: new google.maps.LatLng(47.659235,-122.313473),
+      type: 'info'
+    }, {    
+      //35
+      position: new google.maps.LatLng(47.740932,-122.34354),
+      type: 'info'
+    }, {   
+      //resteraunt
+      //1
+      position: new google.maps.LatLng(47.620836,-122.327898),
+      type: 'info'
+    }, {   
+      //2
+      position: new google.maps.LatLng(47.607052,-122.320759),
+      type: 'info'
+    }, {   
+      //3
+      position: new google.maps.LatLng(47.552913,-122.320859),
+      type: 'info'
+    }, {   
+      //4
+      position: new google.maps.LatLng(47.614426,-122.319061),
+      type: 'info'
+    }, {    
+      //5
+      position: new google.maps.LatLng(47.55721,-122.284452),
+      type: 'info'
+    }, {    
+      //41
+      position: new google.maps.LatLng(47.558001,-122.284853),
+      type: 'info'
+    }, {   
+      //42
+      position: new google.maps.LatLng(37.431573,-78.656894),
+      type: 'info'
+    }, {    
+      //43
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {   
+      //44
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //45
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {   
+      //46
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //47
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //48
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //49
+    position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //50
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {  
+      //51
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {    
+      //52
+      position: new google.maps.LatLng(47.618231,-122.303942),
+      type: 'info'
+    }, {
   ];
 
 var infoWindows = [
