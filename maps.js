@@ -525,20 +525,17 @@ var infoWindows = [
     addMarker(feature, infowindow);
 }}
 
-function initialize() {
-  // set route options (draggable means you can alter/drag the route in the map)
-  var rendererOptions = { draggable: true };
-  directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
-  // bind the map to the directions
-  directionsDisplay.setMap(map);
-  // point the directions to the container for the direction details
-  directionsDisplay.setPanel(document.getElementById("directionsPanel"));
-  // start the geolocation API
-  if (navigator.geolocation) {
-    // when geolocation is available on your device, run this function
-    navigator.geolocation.getCurrentPosition(foundYou, notFound);
-  } else {
-    // when no geolocation is available, alert this message
-    alert('Geolocation not supported or not enabled.');
-  }
-}
+//function findDirection() {
+//  origin: LatLng | String | google.maps.Place,
+//  destination: LatLng | String | google.maps.Place,
+ // travelMode: TravelMode,
+//  transitOptions: TransitOptions,
+ // drivingOptions: DrivingOptions,
+ // unitSystem: UnitSystem,
+ // waypoints[]: DirectionsWaypoint,
+ // optimizeWaypoints: Boolean,
+//  provideRouteAlternatives: Boolean,
+ // avoidHighways: Boolean,
+ // avoidTolls: Boolean,
+ // region: String
+//}
