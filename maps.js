@@ -47,10 +47,13 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       icon: iconBase + 'parking_lot_maps.png'
     },
     library: {
-      icon: iconBase + 'star.png'
+      icon: 'book.png'
     },
     info: {
       icon:'star.png'
+    },
+    restaurant: {
+      icon:'restaurant.png'
     }
   };
 
@@ -214,30 +217,30 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       position: new google.maps.LatLng(47.740932,-122.34354),
       type: 'info'
     }, {   
-      //resteraunt
+      //restaurant
       //1
       position: new google.maps.LatLng(47.620836,-122.327898),
-      type: 'library'
+      type: 'restaurant'
     }, {   
       //2
       position: new google.maps.LatLng(47.607052,-122.320759),
-      type: 'library'
+      type: 'restaurant'
     }, {   
       //3
       position: new google.maps.LatLng(47.552913,-122.320859),
-      type: 'library'
+      type: 'restaurant'
     }, {   
       //4
       position: new google.maps.LatLng(47.614426,-122.319061),
-      type: 'library'
+      type: 'restaurant'
     }, {    
       //5
       position: new google.maps.LatLng(47.55721,-122.284452),
-      type: 'library'
+      type: 'restaurant'
     }, {    
       //6
       position: new google.maps.LatLng(47.558001,-122.284853),
-      type: 'library'
+      type: 'restaurant'
     }, { 
       //libraries    
       //1 44
@@ -354,141 +357,141 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 var infoWindows = [
     {
-      contentString:'<p>Lobby Bar (1505 10th Avenue, Seattle)</p>'
+      contentString:'<h1>Lobby Bar</h1>' + '<p>1505 10th Avenue, Seattle</p>'
     }, {
-      contentString:'<p>Gay City Health Project (517 East Pike Street, Seattle)</p>'
+      contentString:'<h1>Gay City Health Project</h1>' + '<p>517 East Pike Street, Seattle</p>'
     }, {
-      contentString:'<p>The James W. Ray Orion Center (1828 Yale Avenue, Seattle)</p>'
+      contentString:'<h1>The James W. Ray Orion Center</h1>' + '<p>1828 Yale Avenue, Seattle</p>'
     }, {
-      contentString:'<p>University District Youth Center (4516 15th Ave NE, Seattle)</p>'
+      contentString:'<h1>University District Youth Center</h1>' + '<p>4516 15th Ave NE, Seattle</p>'
     }, {
-      contentString:'<p>Starbucks(600 Stewart St, Seattle)</p>'
+      contentString:'<h1>Starbucks</h1>' + '<p>600 Stewart St, Seattle</p>'
     }, {
-      contentString:'<p>Starbucks(Pike Place Market, 1912 Pike Pl, Seattle)</p>'
+      contentString:'<h1>Starbucks</h1>' + '<p>Pike Place Market, 1912 Pike Pl, Seattle</p>'
     }, { 
-      contentString:'<p>Starbucks(QFC, 2746 NE 45th St, Seattle)</p>'
+      contentString:'<h1>Starbucks</h1>' + '<p>QFC, 2746 NE 45th St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(Russell Investments, 1401 2nd Ave, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Russell Investments, 1401 2nd Ave, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(1410 E John St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>1410 E John St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(2201 E Madison St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>2201 E Madison St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(Harvard Market, 1401 Broadway, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Harvard Market, 1401 Broadway, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(Swedish Medical Center Rehab Services,550 17th Ave,Seattle)</p>' //10
+    contentString:'<h1>Starbucks</h1>' + '<p>Swedish Medical Center Rehab Services,550 17th Ave,Seattle</p>' //10
     }, { 
-    contentString:'<p>Starbucks(Quality Food Center, 1801 N 45th St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Quality Food Center, 1801 N 45th St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(100 NW 85th St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>100 NW 85th St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(Safeway, 2100 Queen Anne Ave N, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 2100 Queen Anne Ave N, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(Safeway, 8340 15th Ave NW, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 8340 15th Ave NW, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(1423 NW Market St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>1423 NW Market St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(521 Wall St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>521 Wall St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(417 Broadway E, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>417 Broadway E, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(516 1st Ave W, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>516 1st Ave W, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(2707 Rainier Ave S, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>2707 Rainier Ave S, Seattle</p>'
     }, {
-      contentString:'<p>Starbucks(2622 California Ave SW, Seattle)</p>' //20
+      contentString:'<h1>Starbucks</h1>' + '<p>2622 California Ave SW, Seattle</p>' //20
     }, { 
-    contentString:'<p>Starbucks(Safeway, 12318 15th Ave NE, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 12318 15th Ave NE, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(4754 42nd Ave SW, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>4754 42nd Ave SW, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(316 N 67th St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>316 N 67th St, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(3401 Fremont Avenue N, 3401, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>3401 Fremont Avenue N, 3401, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(7100 East Green Lake Dr N, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>7100 East Green Lake Dr N, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(35th Ave NE, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>35th Ave NE, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(University Village, 4634 26th Ave NE, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>University Village, 4634 26th Ave NE, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(2344 Eastlake Ave E, Seattle)</p>' //30
+    contentString:'<h1>Starbucks</h1>' + '<p>2344 Eastlake Ave E, Seattle</p>' //30
     }, { 
-    contentString:'<p>Starbucks(2137 N Northgate Way, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>2137 N Northgate Way, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(1962 1st Ave S, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>1962 1st Ave S, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(20121 Aurora Ave N, Shoreline)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>20121 Aurora Ave N, Shoreline</p>'
     }, { 
-    contentString:'<p>Starbucks(13035 Aurora Ave N, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>13035 Aurora Ave N, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(14359 15th Ave NE, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>14359 15th Ave NE, Seattle</p>'
     }, { 
-    contentString:'<p>Starbucks(1531 NE 145th St, Seattle)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>1531 NE 145th St, Seattle</p>'
     }, {
-    contentString:'<p>Starbucks(4229 University Way NE)()</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>4229 University Way NE</p>'
     }, {
-    contentString:'<p>Starbucks(15332 Aurora Ave N, Shoreline)</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>15332 Aurora Ave N, Shoreline</p>'
     }, {
-        contentString:'<p>Poquitos (1000 E. Pike St (at 10th Ave.) Seattle)</p>'
+        contentString:'<h1>Poquitos </h1>' + '<p>1000 E. Pike St (at 10th Ave.) Seattle</p>'
     }, {
-        contentString:'<p>Utta Bella Neapolitan Pizza (4918 Rainier Ave S (at Hudson St.) Seattle)</p>'
+        contentString:'<h1>Utta Bella Neapolitan Pizza </h1>' + '<p>4918 Rainier Ave S (at Hudson St.) Seattle</p>'
     }, {
-        contentString:'<p>Geraldine’s counter (4872 S Rainier Ave (at S Ferdinand St) Seattle)</p>'
+        contentString:'<h1>Geraldine’s Counter (4872 S Rainier Ave (at S Ferdinand St) Seattle</p>'
     }, {
-        contentString:'<p>Lola (2000 4th Ave (at Virginia St) Seattle)</p>'
+        contentString:'<h1>Lola </h1>' + '<p>2000 4th Ave (at Virginia St) Seattle</p>'
     }, {
-        contentString:'<p>Seattle Coffee works cafe (107 Pike St (btwn 1st & 2nd Ave), Seattle)</p>'
+        contentString:'<h1>Seattle Coffee Works Cafe </h1>' + '<p>107 Pike St (btwn 1st & 2nd Ave), Seattle</p>'
     }, {
-        contentString:'<p>flying squirrel (4920 S. Genesse Ave. (at 50th Ave S) Seattle)</p>'
+        contentString:'<h1>Flying Squirrel </h1>' + '<p>4920 S. Genesse Ave. (at 50th Ave S) Seattle</p>'
     }, {
-        contentString:'<p>copperleaf restaurant (18525 36th Ave. South (Pacific Hwy & 188th St) Seattle)</p>'
+        contentString:'<h1>Copperleaf Restaurant </h1>' + '<p>18525 36th Ave. South (Pacific Hwy & 188th St) Seattle</p>'
     }, {
-        contentString:'<p>five restaurant Bistro (650 Edmonds Way, Edmonds)(</p>'
+        contentString:'<h1>Five Restaurant Bistro </h1>' + '<p>650 Edmonds Way, Edmonds</p>'
     }, {
-        contentString:'<p>Fremont Public Library (731 N 35th St, Seattle)</p>'
+        contentString:'<h1>Fremont Public Library </h1>' + '<p>731 N 35th St, Seattle</p>'
     }, {
-        contentString:'<p>Capitol Hill Branch Library (425 Harvard Ave E, Seattle)</p>'
+        contentString:'<h1>Capitol Hill Branch Library </h1>' + '<p>425 Harvard Ave E, Seattle</p>'
     }, {
-        contentString:'<p>Wallingford Public Library (1501 N 45th St, Seattle) </p>'
+        contentString:'<h1>Wallingford Public Library </h1>' + '<p>1501 N 45th St, Seattle</p>'
     }, {
-        contentString:'<p>Queen Anne Public Library (400 W Garfield St, Seattle)</p>'
+        contentString:'<h1>Queen Anne Public Library </h1>' + '<p>400 W Garfield St, Seattle</p>'
     }, {
-        contentString:'<p>Seattle Public Library (central library) </p>'
+        contentString:'<h1>Seattle Public Library </h1>' + '<p>central library </p>'
     }, {
-        contentString:'<p>Social Work Library (1000 4th Ave, Seattle)</p>'
+        contentString:'<h1>Social Work Library </h1>' + '<p>1000 4th Ave, Seattle</p>'
     }, {
-        contentString:'<p>University Public Library (4101 15th Ave NE, Seattle)</p>'
+        contentString:'<h1>University Public Library </h1>' + '<p>4101 15th Ave NE, Seattle</p>'
     }, {
-        contentString:'<p>Montlake Branch of the Seattle Public Library (100 University St, Seattle)</p>'
+        contentString:'<h1>Montlake Branch of the Seattle Public Library </h1>' + '<p>100 University St, Seattle</p>'
     }, {
-        contentString:'<p>Montlake Branch of the Seattle Public Library (2401 24th Ave E, Seattle)</p>'
+        contentString:'<h1>Montlake Branch of the Seattle Public Library </h1>' + '<p>2401 24th Ave E, Seattle</p>'
     }, {
-        contentString:'<p>Ballard Public library(5614 22nd Ave NW, Seattle)</p>'
+        contentString:'<h1>Ballard Public library</h1>' + '<p>5614 22nd Ave NW, Seattle</p>'
     }, {
-        contentString:'<p>Magnolia public library (2801 34th Ave W, Seattle)</p>'
+        contentString:'<h1>Magnolia public library </h1>' + '<p>2801 34th Ave W, Seattle</p>'
     }, {
-        contentString:'<p>South Park library (8604 8th Ave S, Seattle)</p>'
+        contentString:'<h1>South Park library </h1>' + '<p>8604 8th Ave S, Seattle</p>'
     }, {
-        contentString:'<p>Green Public library (8016 Greenwood Ave N, Seattle)</p>'
+        contentString:'<h1>Green Public library </h1>' + '<p>8016 Greenwood Ave N, Seattle</p>'
     }, {
-        contentString:'<p>Target (1401 2nd Ave, Seattle)</p>'
+        contentString:'<h1>Target </h1>' + '<p>1401 2nd Ave, Seattle</p>'
     }, {
-        contentString:'<p>Target(2800 Sw Barton St, Seattle)</p>'
+        contentString:'<h1>Target</h1>' + '<p>2800 Sw Barton St, Seattle</p>'
     }, {
-        contentString:'<p>Target(302 Ne Northgate Way, Seattle) <p>'
+        contentString:'<h1>Target</h1>' + '<p>302 Ne Northgate Way, Seattle</p>'
     }, {
-        contentString:'<p>King Country Metro Transit(902 W James St, Kent)</p>'
+        contentString:'<h1>King Country Metro Transit</h1>' + '<p>902 W James St, Kent</p>'
     }, {
-        contentString:'<p>King coutnry Metro North Base(2160 N 163rd St, Shoreline)</p>'
+        contentString:'<h1>King coutnry Metro North Base</h1>' + '<p>2160 N 163rd St, Shoreline</p>'
     }, {
-        contentString:'<p>King Country Metro Transit(400 Yesler Way, Seattle)</p>'
+        contentString:'<h1>King Country Metro Transit</h1>' + '<p>400 Yesler Way, Seattle</p>'
     }, {
-        contentString:'<p>Seattle Central Monorail (370 Thomas St, Seattle)</p>'
+        contentString:'<h1>Seattle Central Monorail </h1>' + '<p>370 Thomas St, Seattle</p>'
     }, {
-        contentString:'<p>King Street Station(303 S Jackson St, Seattle)</p>'
+        contentString:'<h1>King Street Station</h1>' + '<p>303 S Jackson St, Seattle</p>'
     }, {
-        contentString:'<p>University of Washington Station (3720 Montlake Blvd NE, Seattle)</p>'
+        contentString:'<h1>University of Washington Station </h1>' + '<p>3720 Montlake Blvd NE, Seattle</p>'
     } 
   ];
 
