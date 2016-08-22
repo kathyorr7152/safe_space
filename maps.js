@@ -190,40 +190,44 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       type: 'info'
     }, {
        //27
-      position: new google.maps.LatLng(47.618231,-122.303942),
+      position: new google.maps.LatLng(47.708251,-122.332232),
+      type: 'info'
+    }, {
+      //27
+      position: new google.maps.LatLng(47.5842,-122.333899),
       type: 'info'
     }, {   
-      //30
+      //28
       position: new google.maps.LatLng(47.775665,-122.346469),
       type: 'info'
     }, {    
-      //31
+      //29
       position: new google.maps.LatLng(47.724404,-122.344987),
       type: 'info'
     }, {    
-      //32
+      //30
       position: new google.maps.LatLng(47.733646,-122.313151),
       type: 'info'
     }, {    
-      //33
+      //31
       position: new google.maps.LatLng(47.733031,-122.311),
       type: 'info'
     }, {  
-      //34
+      //32
       position: new google.maps.LatLng(47.659235,-122.313473),
       type: 'info'
     }, {    
-      //35
+      //33
       position: new google.maps.LatLng(47.740932,-122.34354),
       type: 'info'
     }, {   
       //restaurant
       //1
-      position: new google.maps.LatLng(47.620836,-122.327898),
+      position: new google.maps.LatLng(47.614426,-122.319061),
       type: 'restaurant'
     }, {   
       //2
-      position: new google.maps.LatLng(47.607052,-122.320759),
+      position: new google.maps.LatLng(47.557212,-122.284452),
       type: 'restaurant'
     }, {   
       //3
@@ -231,15 +235,23 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       type: 'restaurant'
     }, {   
       //4
-      position: new google.maps.LatLng(47.614426,-122.319061),
+      position: new google.maps.LatLng(37.431573,-78.656894),
       type: 'restaurant'
     }, {    
       //5
-      position: new google.maps.LatLng(47.55721,-122.284452),
+      position: new google.maps.LatLng(47.608986,-122.338634),
       type: 'restaurant'
     }, {    
       //6
-      position: new google.maps.LatLng(47.558001,-122.284853),
+      position: new google.maps.LatLng(47.564301,-122.270996),
+      type: 'restaurant'
+    }, { 
+      //7
+       position: new google.maps.LatLng(47.434294,-122.276282),
+      type: 'restaurant'
+    }, { 
+      //8
+      position: new google.maps.LatLng(47.794523,-122.37327),
       type: 'restaurant'
     }, { 
       //libraries    
@@ -365,7 +377,7 @@ var infoWindows = [
     }, {
       contentString:'<h1>University District Youth Center</h1>' + '<p>4516 15th Ave NE, Seattle</p>'
     }, {
-      contentString:'<h1>Starbucks</h1>' + '<p>600 Stewart St, Seattle</p>'
+      contentString:'<h1>Starbucks</h1>' + '<p>600 Stewart St, Seattle</p>' //1
     }, {
       contentString:'<h1>Starbucks</h1>' + '<p>Pike Place Market, 1912 Pike Pl, Seattle</p>'
     }, { 
@@ -373,17 +385,17 @@ var infoWindows = [
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>Russell Investments, 1401 2nd Ave, Seattle</p>'
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>1410 E John St, Seattle</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>1410 E John St, Seattle</p>' //30
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>2201 E Madison St, Seattle</p>'
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>Harvard Market, 1401 Broadway, Seattle</p>'
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>Swedish Medical Center Rehab Services,550 17th Ave,Seattle</p>' //10
+    contentString:'<h1>Starbucks</h1>' + '<p>Swedish Medical Center Rehab Services,550 17th Ave,Seattle</p>' 
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>Quality Food Center, 1801 N 45th St, Seattle</p>'
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>100 NW 85th St, Seattle</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>100 NW 85th St, Seattle</p>' //10
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 2100 Queen Anne Ave N, Seattle</p>'
     }, { 
@@ -399,11 +411,11 @@ var infoWindows = [
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>2707 Rainier Ave S, Seattle</p>'
     }, {
-      contentString:'<h1>Starbucks</h1>' + '<p>2622 California Ave SW, Seattle</p>' //20
+      contentString:'<h1>Starbucks</h1>' + '<p>2622 California Ave SW, Seattle</p>' 
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 12318 15th Ave NE, Seattle</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>Safeway, 12318 15th Ave NE, Seattle</p>' //16
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>4754 42nd Ave SW, Seattle</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>4754 42nd Ave SW, Seattle</p>' //20
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>316 N 67th St, Seattle</p>'
     }, { 
@@ -415,15 +427,15 @@ var infoWindows = [
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>University Village, 4634 26th Ave NE, Seattle</p>'
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>2344 Eastlake Ave E, Seattle</p>' //30
+    contentString:'<h1>Starbucks</h1>' + '<p>2344 Eastlake Ave E, Seattle</p>' 
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>2137 N Northgate Way, Seattle</p>'
-    }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>1962 1st Ave S, Seattle</p>'
+    }, {
+     contentString:'<h1>Starbucks</h1>' + '<p>1962 1st Ave S, Seattle</p>'
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>20121 Aurora Ave N, Shoreline</p>'
     }, { 
-    contentString:'<h1>Starbucks</h1>' + '<p>13035 Aurora Ave N, Seattle</p>'
+    contentString:'<h1>Starbucks</h1>' + '<p>13035 Aurora Ave N, Seattle</p>' //30
     }, { 
     contentString:'<h1>Starbucks</h1>' + '<p>14359 15th Ave NE, Seattle</p>'
     }, { 
