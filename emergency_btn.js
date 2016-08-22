@@ -34,3 +34,6 @@
         }
 
     });
+
+var deviceCheck;
+    
