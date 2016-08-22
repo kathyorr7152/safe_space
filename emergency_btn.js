@@ -6,7 +6,7 @@ $(function() {
             // To iOS:  sms:+000;body=example (semicolon, not question mark)
             return jQuery(this).attr('href').replace(/sms:(\+?([0-9]*))?\?/, 'sms:$1;');
                   });
-                })();
+                });
             $(document).ready(function(){
             navigator.geolocation.getCurrentPosition(handle_geolocation_query);
              });
