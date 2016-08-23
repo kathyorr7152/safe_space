@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>     
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
       #map {
         width: 100%;
@@ -12,11 +17,13 @@
     <script src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvYMNm0GghHlg1kQa9Uaygqpc9-w5FgVk" async defer></script>
     <script type="text/javascript" src="javascripts/jquery.maps.js"></script>
-    <link rel ="stylesheet" href="style.css">
   </head>
   <body onload="initMap()">
       <div class="img_responsive">
-        <img src="map.jpeg"  width="600" height="300" />
+        <img src="map.jpeg"  width="600" height="300" style="width:100%; height:auto;"/>
+        <a href="index.html">
+        <img src="back.jpeg" width="30" style="width:30; height:auto; float:left; margin:auto;">
+        </a>
     </div>
     <div id="map"></div>
   </body>
