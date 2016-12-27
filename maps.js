@@ -253,7 +253,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       type: 'restaurant'
     }, {   
       //7
-      position: new google.maps.LatLng(37.431573,-78.656894),
+      position: new google.maps.LatLng(47.613367700,-122.340125100),
       type: 'restaurant'
     }, {    
       //8
@@ -495,7 +495,8 @@ var infoWindows = [
     }, {
         contentString:'<h1>Green Public library </h1>' + '<p>8016 Greenwood Ave N, Seattle, WA 98103</p>'
     }, {
-        contentString:'<h1>Target </h1>' + '<p>1401 2nd Ave, Seattle, WA 98101</p>'
+       //Target
+       contentString:'<h1>Target </h1>' + '<p>1401 2nd Ave, Seattle, WA 98101</p>'
     }, {
         contentString:'<h1>Target</h1>' + '<p>2800 SW Barton St, Seattle, WA 98126</p>'
     }, {
@@ -503,6 +504,7 @@ var infoWindows = [
     }, {
         contentString:'<h1>New York X-Change</h1>' + '<p>225 Broadway E, Seattle, WA 98102</p>'
     }, {
+        //metro
         contentString:'<h1>King County Metro Transit</h1>' + '<p>902 W James St, Kent, WA 98032</p>'
     }, {
         contentString:'<h1>King County Metro North Base</h1>' + '<p> 316 N 67th St, Seattle, WA 98103</p>'
