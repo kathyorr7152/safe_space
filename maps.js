@@ -526,4 +526,3 @@ var infoWindows = [
         });
     addMarker(feature, infowindow);
 }}
-
